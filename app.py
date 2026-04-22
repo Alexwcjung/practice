@@ -2,7 +2,7 @@ import streamlit as st
 from gtts import gTTS
 import io
 
-st.subheader("우창이와 함께하는 Text-to-Speech Converter (using Google TTS)")
+st.subheader("Text-to-Speech Converter (using Google TTS)")
 
 text_input = st.text_area("Enter the text you want to convert to speech:")
 
