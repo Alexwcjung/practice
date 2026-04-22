@@ -4,7 +4,17 @@ import io
 
 st.subheader("Text-to-Speech Converter (using Google TTS)")
 
-text_input = st.text_area("Enter the text you want to convert to speech:")
+default_text = """Hello, everyone.
+This is a sample sentence for text-to-speech practice.
+
+안녕하세요.
+이 문장은 음성 변환 연습용 예시입니다."""
+
+text_input = st.text_area(
+    "Enter the text you want to convert to speech:",
+    value=default_text,
+    height=200
+)
 
 language = st.selectbox(
     "Choose a language: 🇰🇷 🇺🇸 🇬🇧",
@@ -36,7 +46,3 @@ if tts_button and text_input:
     speech.seek(0)
 
     st.audio(speech.getvalue(), format="audio/mp3")
-
-st.markdown("---")
-st.caption("🇺🇸 English text: Teacher-designed coding applications create tailored learning experiences, making complex concepts easier to understand through interactive and adaptive tools. They enhance engagement, provide immediate feedback, and support active learning.")
-st.caption("🇰🇷 Korean text: 교사가 직접 만든 코딩 기반 애플리케이션은 학습자의 필요에 맞춘 학습 경험을 제공하고, 복잡한 개념을 쉽게 이해하도록 돕습니다. 또한 학습 몰입도를 높이고 즉각적인 피드백을 제공하며, 능동적인 학습을 지원합니다.")
