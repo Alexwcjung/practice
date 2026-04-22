@@ -4,7 +4,7 @@ import io
 
 st.subheader("우창이와 함께하는 Text-to-Speech Converter (using Google TTS)")
 
-text_input = st.text_area("Enter the text you want to convert to speech:")
+text_input = st.text_area("Enter the text you want to convert to speech: 안녕하세요")
 
 language = st.selectbox(
     "Choose a language: 🇰🇷 🇺🇸 🇬🇧",
