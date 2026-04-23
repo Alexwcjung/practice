@@ -4,10 +4,7 @@ import io
 
 st.subheader("Text-to-Speech Converter (using Google TTS)")
 
-default_text = """
-
-안녕하세요.
-이 문장은 음성 변환 연습용 예시입니다."""
+default_text = 
 
 text_input = st.text_area(
     "Enter the text you want to convert to speech:",
