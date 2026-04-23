@@ -3,7 +3,7 @@ import random
 
 st.set_page_config(page_title="Easy English Word Quiz", layout="centered")
 
-st.title("🚀Alex선생님과 함께하는 영어 단어 퀴즈✨")
+st.title("✨Alex선생님과 함께하는 영어 단어 퀴즈🚀")
 st.caption("30개의 쉬운 영어 단어 뜻 맞히기 · 3지선다 퀴즈")
 
 # ---------------------------
