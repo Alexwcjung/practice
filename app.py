@@ -4,7 +4,7 @@ import io
 
 st.subheader("Text-to-Speech Converter (using Google TTS)")
 
-default_text = 
+default_text = """"""
 
 text_input = st.text_area(
     "Enter the text you want to convert to speech:",
